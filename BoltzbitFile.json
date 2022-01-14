@@ -1,4 +1,29 @@
 {
-  "id": "61e0",
-  
+  "id": "61e1bd0ea24b3564e25591f0",
+  "createdAt": "Jan 14, 2022 6:12:30 PM",
+  "createdBy": "demo-user",
+  "sharedWith": [
+    {
+      "userGroupId": "PUBLIC",
+      "accessLevel": "READ_ONLY"
+    }
+  ],
+  "projectName": "Project_HanchenXiong/IntegrationTest2",
+  "aiType": "DA",
+  "datasetId": "61e1a812f9c0fe490cf1296a",
+  "modelIds": [
+    "61e1bd0b96cbbd2d12d6fe04",
+    "61e1bd0b96cbbd2d12d6fe05",
+    "61e1bd0b96cbbd2d12d6fe06",
+    "61e1bd0b96cbbd2d12d6fe07",
+    "61e1bd0b96cbbd2d12d6fe08",
+    "61e1bd0b96cbbd2d12d6fe09",
+    "61e1bd0b96cbbd2d12d6fe0a",
+    "61e1bd0b96cbbd2d12d6fe0b",
+    "61e1bd0b96cbbd2d12d6fe0c"
+  ],
+  "trainingJobIds": [
+    "61e1bd0e507af35ea19d941b"
+  ],
+  "status": "DATASET_SELECTION"
 }
