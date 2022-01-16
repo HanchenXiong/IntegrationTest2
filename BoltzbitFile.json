@@ -1,6 +1,6 @@
 {
-  "id": "61e1bdada24b3564e25591f1",
-  "createdAt": "Jan 14, 2022 6:15:09 PM",
+  "id": "61e4401fa24b3564e25591f2",
+  "createdAt": "Jan 16, 2022 3:56:15 PM",
   "createdBy": "demo-user",
   "sharedWith": [
     {
@@ -12,18 +12,18 @@
   "aiType": "DA",
   "datasetId": "61e1a812f9c0fe490cf1296a",
   "modelIds": [
-    "61e1bdad96cbbd2d12d6fe0d",
-    "61e1bdad96cbbd2d12d6fe0e",
-    "61e1bdad96cbbd2d12d6fe0f",
-    "61e1bdad96cbbd2d12d6fe10",
-    "61e1bdad96cbbd2d12d6fe11",
-    "61e1bdad96cbbd2d12d6fe12",
-    "61e1bdad96cbbd2d12d6fe13",
-    "61e1bdad96cbbd2d12d6fe14",
-    "61e1bdad96cbbd2d12d6fe15"
+    "61e4401d96cbbd2d12d6fe16",
+    "61e4401d96cbbd2d12d6fe17",
+    "61e4401d96cbbd2d12d6fe18",
+    "61e4401d96cbbd2d12d6fe19",
+    "61e4401d96cbbd2d12d6fe1a",
+    "61e4401d96cbbd2d12d6fe1b",
+    "61e4401d96cbbd2d12d6fe1c",
+    "61e4401d96cbbd2d12d6fe1d",
+    "61e4401d96cbbd2d12d6fe1e"
   ],
   "trainingJobIds": [
-    "61e1bdad507af35ea19d941c"
+    "61e4401f507af35ea19d941d"
   ],
   "status": "DATASET_SELECTION"
 }
