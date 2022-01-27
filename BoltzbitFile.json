@@ -1,29 +1,84 @@
 {
-  "id": "61f1be93ca124b2514cc68dc",
-  "createdAt": "Jan 26, 2022 9:35:14 PM",
+  "id": "61f1ea47ca124b2514cc68e0",
   "createdBy": "demo-user",
+  "createdAt": "Jan 27, 2022 12:41:43 AM",
   "sharedWith": [
     {
       "userGroupId": "PUBLIC",
       "accessLevel": "READ_ONLY"
     }
   ],
-  "projectName": "Project_HanchenXiong/IntegrationTest2",
-  "aiType": "DA",
+  "cubeId": "61f1ea44ca124b2514cc68df",
   "datasetId": "61f169ef44268a0d4663a722",
-  "modelIds": [
-    "61f16a1080e060700a19cec7",
-    "61f16a1080e060700a19cec8",
-    "61f16a1080e060700a19cec9",
-    "61f16a1080e060700a19ceca",
-    "61f16a1080e060700a19cecb",
-    "61f16a1080e060700a19cecc",
-    "61f16a1080e060700a19cecd",
-    "61f16a1080e060700a19cece",
-    "61f16a1080e060700a19cecf"
-  ],
-  "trainingJobIds": [
-    "61f1be92d209e80fb2c795e1"
-  ],
-  "status": "DATASET_SELECTION"
+  "modelId": "61f16a1080e060700a19cec7",
+  "dataProcessingConfig": {
+    "steps": [
+      {
+        "operation": "RESCALE"
+      }
+    ]
+  },
+  "trainingConfig": {
+    "ckpt_file": "ckpt.npz",
+    "dtype": "float32",
+    "batch_size": 100,
+    "infer": {
+      "lkh_weight": 10,
+      "min_eps": 0.001,
+      "nlayers": 10,
+      "lfsteps": 5,
+      "initial_log_eps": -3,
+      "initial_ei_prior_mean": 0,
+      "initial_ei_prior_std": 1
+    },
+    "train": {
+      "trn_weight": 10,
+      "optimizer": {
+        "learning_rate_init": 2e-4,
+        "learning_rate_change_points": [],
+        "learning_rate_change_values": [],
+        "learning_rate_inf_init": 2e-4,
+        "learning_rate_inf_change_points": [],
+        "learning_rate_inf_change_values": []
+      },
+      "max_iter": 2000,
+      "save_period": 200,
+      "logging_period": 10
+    },
+    "dataloader": {
+      "trn_tst_split": 1.0,
+      "shuffle": true,
+      "repeat": false
+    }
+  },
+  "evaluationConfig": {
+    "method": "EVAL_DEFAULT",
+    "trainingJobId": "61f1ea48d209e80fb2c795e3",
+    "datasetId": "61f169ef44268a0d4663a722",
+    "taskIds": [
+      "61f16a1844268a0d4663a723",
+      "61f16a1844268a0d4663a724",
+      "61f16a1844268a0d4663a725"
+    ],
+    "metrics": [
+      {
+        "type": "AVERAGE_LOG_LOSS"
+      },
+      {
+        "type": "AVERAGE_ACCURACY"
+      },
+      {
+        "type": "AVERAGE_PERCENTAGE_ERROR"
+      },
+      {
+        "type": "AVERAGE_ERROR"
+      },
+      {
+        "type": "PR_CURVE"
+      },
+      {
+        "type": "ROC_CURVE"
+      }
+    ]
+  }
 }
