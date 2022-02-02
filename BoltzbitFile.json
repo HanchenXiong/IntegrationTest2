@@ -1,16 +1,16 @@
 {
-  "id": "61f3daab756cc64e7ef9c939",
+  "id": "61fa8e96cc63e5228119fc39",
   "createdBy": "demo-user",
-  "createdAt": "Jan 28, 2022 11:59:39 AM",
+  "createdAt": "Feb 2, 2022 2:00:54 PM",
   "sharedWith": [
     {
       "userGroupId": "PUBLIC",
       "accessLevel": "READ_ONLY"
     }
   ],
-  "cubeId": "61f3d929756cc64e7ef9c937",
-  "datasetId": "61f3cf7d36975356002b3afb",
-  "modelId": "61f3daab2dd4ff7f8ac0eebf",
+  "cubeId": "61fa8e95cc63e5228119fc38",
+  "datasetId": "61fa72ba3acc33576533d6ce",
+  "modelId": "61fa72da80e060700a19cf08",
   "dataProcessingConfig": {
     "steps": [
       {
@@ -19,30 +19,30 @@
     ]
   },
   "trainingConfig": {
+    "ckpt_file": "ckpt.npz",
+    "dtype": "float32",
     "batch_size": 100,
     "infer": {
-      "lkh_weight": 1,
+      "lkh_weight": 10,
       "min_eps": 0.001,
       "nlayers": 10,
-      "lfsteps": 6,
-      "momentum_std": 0.1,
+      "lfsteps": 5,
       "initial_log_eps": -3,
       "initial_ei_prior_mean": 0,
-      "initial_ei_prior_std": 1,
-      "stop_gradient_pot": false
+      "initial_ei_prior_std": 1
     },
     "train": {
-      "trn_weight": 1,
+      "trn_weight": 10,
       "optimizer": {
-        "learning_rate_init": 5e-3,
-        "learning_rate_change_points": 200,
-        "learning_rate_change_values": 0.99,
-        "learning_rate_inf_init": 5e-3,
-        "learning_rate_inf_change_points": 200,
-        "learning_rate_inf_change_values": 0.99
+        "learning_rate_init": 2e-4,
+        "learning_rate_change_points": [],
+        "learning_rate_change_values": [],
+        "learning_rate_inf_init": 2e-4,
+        "learning_rate_inf_change_points": [],
+        "learning_rate_inf_change_values": []
       },
-      "max_iter": 500,
-      "save_period": 50,
+      "max_iter": 2000,
+      "save_period": 200,
       "logging_period": 10
     },
     "dataloader": {
@@ -53,12 +53,12 @@
   },
   "evaluationConfig": {
     "method": "EVAL_DEFAULT",
-    "trainingJobId": "61f3daab6a51a64ad434b61e",
-    "datasetId": "61f3cf7d36975356002b3afb",
+    "trainingJobId": "61fa8e9649f9835f941eb685",
+    "datasetId": "61fa72ba3acc33576533d6ce",
     "taskIds": [
-      "61f3d92936975356002b3afd",
-      "61f3d92936975356002b3afe",
-      "61f3d92936975356002b3aff"
+      "61fa72dc3acc33576533d6cf",
+      "61fa72dc3acc33576533d6d0",
+      "61fa72dc3acc33576533d6d1"
     ],
     "metrics": [
       {
