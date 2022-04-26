@@ -1,7 +1,7 @@
 {
-  "id": "6267fbe5bcb2b03644cae267",
+  "id": "6267fd0abcb2b03644cae268",
   "createdBy": "demo-user",
-  "createdAt": "Apr 26, 2022 3:04:21 PM",
+  "createdAt": "Apr 26, 2022 3:09:14 PM",
   "sharedWith": [
     {
       "userGroupId": "PUBLIC",
@@ -14,7 +14,7 @@
   ],
   "cubeId": "6267de46bcb2b03644cae258",
   "datasetId": "625443a57036dc47005985b6",
-  "modelId": "6267fbadc0531f1f3ed239e7",
+  "modelId": "6267fd08c0531f1f3ed239e8",
   "trainingConfig": {
     "ckpt_file": "ckpt.npz",
     "dtype": "float32",
@@ -50,7 +50,7 @@
   },
   "evaluationConfig": {
     "method": "EVAL_DEFAULT",
-    "trainingJobId": "6267fbe5f3bc301602a9a4c1",
+    "trainingJobId": "6267fe7af3bc301602a9a4c3",
     "datasetId": "625443a57036dc47005985b6",
     "taskIds": [
       "625443d586435a72d555417c",
