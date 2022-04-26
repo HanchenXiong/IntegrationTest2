@@ -1,7 +1,7 @@
 {
-  "id": "6267fbdbbcb2b03644cae266",
+  "id": "6267fbe5bcb2b03644cae267",
   "createdBy": "demo-user",
-  "createdAt": "Apr 26, 2022 3:04:11 PM",
+  "createdAt": "Apr 26, 2022 3:04:21 PM",
   "sharedWith": [
     {
       "userGroupId": "PUBLIC",
@@ -50,7 +50,7 @@
   },
   "evaluationConfig": {
     "method": "EVAL_DEFAULT",
-    "trainingJobId": "6267fbdbf3bc301602a9a4bf",
+    "trainingJobId": "6267fbe5f3bc301602a9a4c1",
     "datasetId": "625443a57036dc47005985b6",
     "taskIds": [
       "625443d586435a72d555417c",
