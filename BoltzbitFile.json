@@ -1,7 +1,7 @@
 {
-  "id": "6267de47bcb2b03644cae259",
+  "id": "6267de97bcb2b03644cae25a",
   "createdBy": "demo-user",
-  "createdAt": "Apr 26, 2022 12:57:59 PM",
+  "createdAt": "Apr 26, 2022 12:59:19 PM",
   "sharedWith": [
     {
       "userGroupId": "PUBLIC",
@@ -31,10 +31,10 @@
     "train": {
       "trn_weight": 10,
       "optimizer": {
-        "learning_rate_init": 2e-4,
+        "learning_rate_init": 0.0002,
         "learning_rate_change_points": [],
         "learning_rate_change_values": [],
-        "learning_rate_inf_init": 2e-4,
+        "learning_rate_inf_init": 0.0002,
         "learning_rate_inf_change_points": [],
         "learning_rate_inf_change_values": []
       },
@@ -43,14 +43,14 @@
       "logging_period": 10
     },
     "dataloader": {
-      "trn_tst_split": 1.0,
+      "trn_tst_split": 1,
       "shuffle": true,
       "repeat": false
     }
   },
   "evaluationConfig": {
     "method": "EVAL_DEFAULT",
-    "trainingJobId": "6267de47f3bc301602a9a4a5",
+    "trainingJobId": "6267de97f3bc301602a9a4a7",
     "datasetId": "625443a57036dc47005985b6",
     "taskIds": [
       "625443d586435a72d555417c",
