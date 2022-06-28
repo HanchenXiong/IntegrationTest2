@@ -7,25 +7,40 @@
 [![Serving Status](http://demo.platform.boltzbit.com/github-service/api/v1/cubes/status/serving?repositoryOwnerPlusName=HanchenXiong/IntegrationTest2&token=PUBLIC)](https://demo.platform.boltzbit.com/demo-user/HanchenXiong/IntegrationTest2?tab=Deployment)
 
 
-## Model Details
-
- **Developed by:** Hugging Face
- **Model type:** Transformer-based Language Model
- **Language:** English
- **License:** Apache 2.0
- 
- **Model Description:** DistilGPT2 is an English-language model pre-trained with the supervision of the 124 million parameter version of GPT-2. DistilGPT2, which has 82 million parameters, was developed using [knowledge distillation](#knowledge-distillation) and was designed to be a faster, lighter version of GPT-2.
- 
-**Resources for more information:** See [this repository](https://github.com/huggingface/transformers/tree/main/examples/research_projects/distillation) for more about Distil\* (a class of compressed models including Distilled-GPT2), [Sanh et al. (2019)](https://arxiv.org/abs/1910.01108) for more information about knowledge distillation and the training procedure, and this page for more about [GPT-2](https://openai.com/blog/better-language-models/).
+# Requirements
+In all examples, we used:
+- `pytorch 1.7.0`
+- `numpy 1.17.2`
+- `matplotlib 3.1.1`
+- `scikit-learn 0.21.3`
+- `pytorch-model-summary 0.1.1`
+- `jupyter 1.0.0`
 
 
-## Uses, Limitations and Risks
+# Examples
+All examples of implemented deep generative models are provided as jupyter notebooks. They can be find in the following folders:
+1. `arms`: an example of an autoregressive model with a causal convolutiona layer in 1D.
+2. `flows`: an example of a flow-based model, namely, RealNVP with coupling layers and permutation layers, and IDFs (Integer Discrete Flows).
+3. `vaes`: an example of a Variational Auto-Encoder using fully-connected layers and a standard Gaussian prior, and another example of various priors for VAEs, and a third example on a hierarchical VAE.
+4. `ddgms`: an example of a Diffusion-based Deep Generative Model using the a Gaussian forward diffusion with a fixed variace and a reverse diffusion parameterized by MLPs.
+5. `hybrid_modeling`: an example of a hybrid model using fully-connected layers and IDFs.
+6. `ebms`: an example of an energy-based model parameterized by an MLP.
+7. `gans`: an example of a GAN parameterized by MLPs.
+8. `neural_compression`: an example of applying deep generative modeling to image neural compression.
 
-#### Limitations and Risks
 
-
-**CONTENT WARNING: Readers should be aware this section contains content that is disturbing, offensive, and can propagate historical and current stereotypes.**
-
-As the developers of GPT-2 (OpenAI) note in their [model card](https://github.com/openai/gpt-2/blob/master/model_card.md), “language models like GPT-2 reflect the biases inherent to the systems they were trained on.” Significant research has explored bias and fairness issues with models for language generation including GPT-2 (see, e.g., [Sheng et al. (2021)](https://aclanthology.org/2021.acl-long.330.pdf) and [Bender et al. (2021)](https://dl.acm.org/doi/pdf/10.1145/3442188.3445922)). 
-
-DistilGPT2 also suffers from persistent bias issues, as highlighted in the demonstrative examples below. Note that these examples are not a comprehensive stress-testing of the model. Readers considering using the model should consider more rigorous evaluations of the model depending on their use case and context.
+# Citation
+If you use this code in any way, please refer to it by citing my book <a href="https://link.springer.com/book/10.1007/978-3-030-93158-2">"Deep Generative Modeling"</a>:
+- APA style:
+```
+Tomczak, J. M. (2022). Deep Generative Modeling. Springer Nature
+```
+- Bibtex:
+```
+@book{tomczak2022deep,
+  title={Deep Generative Modeling},
+  author={Tomczak, Jakub M},
+  publisher={Springer Nature},
+  year={2022}
+}
+```
