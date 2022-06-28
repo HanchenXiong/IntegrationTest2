@@ -10,11 +10,8 @@
 ## Model Details
 
  **Developed by:** Hugging Face
- 
  **Model type:** Transformer-based Language Model
- 
  **Language:** English
- 
  **License:** Apache 2.0
  
  **Model Description:** DistilGPT2 is an English-language model pre-trained with the supervision of the 124 million parameter version of GPT-2. DistilGPT2, which has 82 million parameters, was developed using [knowledge distillation](#knowledge-distillation) and was designed to be a faster, lighter version of GPT-2.
